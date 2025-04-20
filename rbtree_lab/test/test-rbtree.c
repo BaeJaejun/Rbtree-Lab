@@ -1,5 +1,5 @@
 #include <assert.h>
-#include <rbtree.h>
+#include "../src/rbtree.h" //시스템 헤더 경로 아니니까 사용자 경로니까 바꿔줘야함
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
