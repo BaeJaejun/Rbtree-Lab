@@ -101,7 +101,7 @@ void Right_Rotate(rbtree* t, node_t *y){
 //삽입 색 보정 함수
 void RB_Insert_Fixup(rbtree *t, node_t *z){
   // z노드가 루트가 아니고(루트의 부모는 nil(Black)), 부모가 red 이면 반복
-  while (z->parent->color == RBTREE_RED){ 
+  while (z->parent->color == RBTREE_RED){  //  && z->parent != t->nil 추가해주면 좋다.
     if (z->parent == z->parent->parent->left) {
       //------------------z 부모가 왼쪽자식인가-------------------
       node_t* y = z->parent->parent->right; //y = 삼촌노드
